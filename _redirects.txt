@@ -1,0 +1,32 @@
+# Netlify redirects file for SEO-friendly URLs
+
+# Main redirects for common search terms
+/biblical-hebrew-courses    /    301
+/hebrew-bible-courses      /    301
+/dr-paul-hocking          /#about    301
+/paul-hocking             /#about    301
+
+# Course-specific redirects
+/biblefresh-course        /#biblefresh    301
+/biblical-hebrew-tutoring /#tutoring      301
+/hebrew-bible-reading     /#reading       301
+/gcse-hebrew             /#tutoring      301
+/a-level-hebrew          /#tutoring      301
+
+# Alternative spellings and variations
+/bible-fresh             /#biblefresh    301
+/hebrew-tutoring         /#tutoring      301
+/torah-study             /               301
+/genesis-hebrew          /#biblefresh    301
+
+# Contact and registration aliases
+/contact                 /#about         301
+/register               /#courses        301
+/enroll                 /#courses        301
+
+# Handle common typos
+/bibelfresh             /#biblefresh     301
+/hebrew-bible-studie    /                301
+
+# Fallback - any unmatched URL goes to homepage
+/*                      /index.html      200

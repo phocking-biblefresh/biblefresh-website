@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblical Hebrew Courses | Biblefresh with Dr Paul Hocking | Hebrew Scripture Study</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn Biblical Hebrew courses with Dr Paul Hocking. Biblefresh beginner courses, Biblical Hebrew Exam Tutoring (GCSE/A-Level), and Hebrew Bible Reading sessions. Expert Hebrew Scripture study online.">
+    <meta name="keywords" content="Biblical Hebrew courses, Biblefresh, Dr Paul Hocking, Hebrew Bible Study, Biblical Hebrew Exam Tutoring, Hebrew Bible Reading, GCSE Hebrew, A-Level Hebrew, Hebrew Scripture study, Torah study, Genesis Hebrew, Biblical Hebrew online, Hebrew language courses">
+    <meta name="author" content="Dr Paul Hocking">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Biblical Hebrew Courses | Biblefresh with Dr Paul Hocking">
+    <meta property="og:description" content="Expert Biblical Hebrew courses with Dr Paul Hocking. Biblefresh beginner groups, exam tutoring, and Bible reading sessions. Start your Hebrew Scripture journey today.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://biblefresh.netlify.app">
+    
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://biblefresh.netlify.app">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4a5568;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><rect fill="%23f8f9fa" width="1000" height="600"/><text x="500" y="300" text-anchor="middle" font-family="serif" font-size="120" fill="%234a5568" opacity="0.1">בְּרֵאשִׁית</text></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 6rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hebrew-text {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+            color: #ffd700;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid #667eea;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .course-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+
+        .course-card .description {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .feature-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            margin: 1rem 0;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .about-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #4a5568;
+        }
+
+        .instructor-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .instructor-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #4a5568;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 2rem;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .close {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #aaa;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo" title="Hebrew Bible Study with Dr Paul Hocking">Hebrew Bible Study</a>
+            <ul class="nav-links">
+                <li><a href="#biblefresh" title="Biblefresh Hebrew Bible Course">Biblefresh</a></li>
+                <li><a href="#tutoring" title="Biblical Hebrew Exam Tutoring">Tutoring</a></li>
+                <li><a href="#reading" title="Hebrew Bible Reading Sessions">Reading</a></li>
+                <li><a href="#about" title="About Dr Paul Hocking">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Hebrew Bible Study</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 1rem; color: #ffd700; font-weight: 500;">with Dr Paul Hocking</p>
+            <div class="hebrew-text" dir="rtl">בְּרֵאשִׁית</div>
+            <p>In the Beginning</p>
+            <p>Discover three different ways to study the Hebrew Bible and unlock fresh insights from the original scriptures with qualified Biblical Hebrew instructor Dr Paul Hocking</p>
+        </div>
+    </section>
+
+    <section class="course-grid container" id="courses">
+        <div class="course-card" id="biblefresh">
+            <h3>Biblefresh - Hebrew Bible Study Course</h3>
+            <p class="description">A 15 session Biblefresh course on alternate weeks for small groups of complete beginners, giving a basic understanding of the Biblical Hebrew Language with Dr Paul Hocking</p>
+            
+            <h4>Why Choose Biblefresh?</h4>
+            <ul class="feature-list">
+                <li>15 interactive 1½ hour tutorials on alternate weeks</li>
+                <li>Begin "in the Beginning" - Focus on Genesis Chapter 1</li>
+                <li>For Jews and Christians - No previous knowledge required</li>
+                <li>Zoom sessions with participants from around the world</li>
+                <li>Complete curriculum and unique course materials included</li>
+                <li>Hebrew alphabet and vowel mastery</li>
+                <li>First session FREE to try!</li>
+            </ul>
+            
+            <div class="price">£150</div>
+            <p style="font-style: italic; color: #666;">Or whatever you can afford - cost should be no hindrance!</p>
+            
+            <p><strong>Next Course starts:</strong></p>
+            <p style="margin-left: 2rem;">27th September 2025</p>
+            
+            <button class="btn" onclick="openModal('biblefresh-modal')">Register for FREE First Session</button>
+        </div>
+
+        <div class="course-card" id="tutoring">
+            <h3>Biblical Hebrew Exam Tutoring</h3>
+            <p class="description">One-to-one tutoring for GCSE or A-Level Biblical Hebrew courses, supporting your studies right through to examination</p>
+            
+            <h4>What's Included:</h4>
+            <ul class="feature-list">
+                <li>Regular support from qualified tutor and coach</li>
+                <li>1.5hr sessions on alternate weeks via Zoom</li>
+                <li>Can start at any stage in your studies</li>
+                <li>Additional content and practice for deeper understanding</li>
+                <li>Support from GCSE through to Doctorate level experience</li>
+                <li>Initial session FREE to discuss expectations</li>
+            </ul>
+            
+            <div class="price">£30 GCSE</div>
+            <div class="price" style="margin-top: 0.5rem;">£40 A-Level</div>
+            <p>Per session</p>
+            
+            <button class="btn" onclick="openModal('tutoring-modal')">Register for FREE First Session</button>
+        </div>
+
+        <div class="course-card" id="reading">
+            <h3>Hebrew Bible Reading</h3>
+            <p class="description">Learn to read the Hebrew Bible or practice your reading, and discuss translation and interpretation with a fellow traveller</p>
+            
+            <h4>Perfect For:</h4>
+            <ul class="feature-list">
+                <li>Those with basic Hebrew who want to develop confidence</li>
+                <li>GCSE/A-Level graduates wanting to maintain skills</li>
+                <li>1hr sessions on alternate weeks via Zoom</li>
+                <li>Flexible days and times</li>
+                <li>Start with Genesis narrative, progress to legal/poetic texts</li>
+                <li>Additional knowledge and papers as appropriate</li>
+            </ul>
+            
+            <div class="price">£20</div>
+            <p>Per session</p>
+            
+            <button class="btn" onclick="openModal('reading-modal')">Register for FREE First Session</button>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Dr. Paul Hocking</h2>
+                    <p>Dr. Paul Hocking facilitates the interactive sessions, bringing years of ministry experience as a Bible teacher, pastor, and Hebrew Bible scholar. Married with two adult children. With experience teaching Jews and Christians worldwide, Paul has followed the path from GCSE and A-Level through to a Doctorate in the Hebrew Bible.</p>
+                    <p>The courses explore well-known Bible passages to discover additional insights that come from appreciating the language behind the translation. You'll learn Hebrew words you already know—like Hallelujah, Amen, Hosanna—and new ones with their rich meanings.</p>
+                </div>
+                <div class="instructor-card">
+                    <h3>Qualifications & Experience</h3>
+                    <ul class="feature-list">
+                        <li>Doctorate in literary studies of the Torah</li>
+                        <li>Qualified teacher</li>
+                        <li>Years of ministry experience as Bible teacher and pastor</li>
+                        <li>Experience teaching students worldwide</li>
+                        <li>Tutoring Biblical Hebrew for many years</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hebrew Bible Study. Transforming lives through the Hebrew Scriptures.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="biblefresh-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('biblefresh-modal')">&times;</span>
+            <h2>Register for Biblefresh</h2>
+            <form id="biblefresh-form">
+                <div class="form-group">
+                    <label for="bf-name">Name:</label>
+                    <input type="text" id="bf-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="bf-email">Email Address:</label>
+                    <input type="email" id="bf-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="bf-location">City, Country:</label>
+                    <input type="text" id="bf-location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="bf-message">Message (Optional):</label>
+                    <textarea id="bf-message" name="message" rows="4" placeholder="Share your interest in the Hebrew Scriptures and any questions about the course..."></textarea>
+                </div>
+                <button type="submit" class="btn">Send Registration Details</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="tutoring-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('tutoring-modal')">&times;</span>
+            <h2>Register for Biblical Hebrew Tutoring</h2>
+            <form id="tutoring-form">
+                <div class="form-group">
+                    <label for="t-name">Name:</label>
+                    <input type="text" id="t-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="t-email">Email Address:</label>
+                    <input type="email" id="t-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="t-location">City, Country:</label>
+                    <input type="text" id="t-location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="t-message">Message (Optional):</label>
+                    <textarea id="t-message" name="message" rows="4" placeholder="Share your study context in the Hebrew Scriptures and any questions about the tutoring..."></textarea>
+                </div>
+                <button type="submit" class="btn">Send Registration Details</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="reading-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('reading-modal')">&times;</span>
+            <h2>Register for Hebrew Bible Reading</h2>
+            <form id="reading-form">
+                <div class="form-group">
+                    <label for="r-name">Name:</label>
+                    <input type="text" id="r-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="r-email">Email Address:</label>
+                    <input type="email" id="r-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="r-location">City, Country:</label>
+                    <input type="text" id="r-location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="r-message">Message (Optional):</label>
+                    <textarea id="r-message" name="message" rows="4" placeholder="Share your interest in reading the Hebrew Scriptures, your reading stage, and any questions about the approach..."></textarea>
+                </div>
+                <button type="submit" class="btn">Send Registration Details</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+
+        // Handle form submissions
+        document.getElementById('biblefresh-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            handleFormSubmission('biblefresh', this);
+        });
+
+        document.getElementById('tutoring-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            handleFormSubmission('tutoring', this);
+        });
+
+        document.getElementById('reading-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            handleFormSubmission('reading', this);
+        });
+
+        function handleFormSubmission(courseType, form) {
+            const formData = new FormData(form);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const location = formData.get('location');
+            const message = formData.get('message');
+
+            // Create email content
+            const subject = `Registration for ${courseType.charAt(0).toUpperCase() + courseType.slice(1)} Course`;
+            const body = `Name: ${name}
+Email: ${email}
+Location: ${location}
+Course: ${courseType.charAt(0).toUpperCase() + courseType.slice(1)}
+
+Message: ${message || 'No additional message provided'}`;
+
+            // Create mailto link
+            const mailtoLink = `mailto:biblefresh@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Close modal and show confirmation
+            closeModal(`${courseType}-modal`);
+            alert('Your email client should now open with your registration details. Please send the email to complete your registration!');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

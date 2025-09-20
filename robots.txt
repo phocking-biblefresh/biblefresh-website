@@ -1,0 +1,33 @@
+# robots.txt for Biblefresh Hebrew Bible Study website
+# Helps search engines index the site properly
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.netlify/
+
+# Sitemap location (Netlify will generate this automatically)
+Sitemap: https://biblefresh.netlify.app/sitemap.xml
+
+# Crawl delay to be respectful
+Crawl-delay: 1
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block common spam bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
